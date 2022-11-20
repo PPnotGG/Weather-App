@@ -8,5 +8,5 @@
 -Просмотр текущей температуры, скорости ветра и погоды по заданным координатам  
   
   
-Ссылка на GitHub Pages:
+Ссылка на GitHub Pages: https://ppnotgg.github.io/Weather-App/
  
