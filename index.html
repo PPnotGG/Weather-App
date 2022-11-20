@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>WeatherApp</title>
+</head>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=9e438ae5-529c-434f-a926-1b862ec718a3&lang=ru_RU" type="text/javascript"></script>
+<body>
+    <section class="geocoordinates">
+            <label>
+                Широта: 
+                <input type="number" class="geocoordinates__input-lat">
+            </label><br>
+            <label>
+                Долгота: 
+                <input type="number" class="geocoordinates__input-lon">
+            </label>
+            <button onclick="createWidget()" class="geocoordinates__submit">
+                Добавить виджет с погодой
+            </button>
+            <button onclick="deleteWidget()" class="geocoordinates__delete">
+                Удалить последний виджет
+            </button>
+    </section>
+    <section class="widgets">
+        <div class="invisible"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

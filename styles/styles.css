@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1170px;
+    font-family: sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+
+.geocoordinates {
+    width: 1170px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.geocoordinates__input-lat {
+    display: block;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #111;
+    border-radius: 10px;
+    width: 100%
+}
+
+.geocoordinates__input-lon {
+    display: block;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #111;
+    border-radius: 10px;
+    width: 100%
+}
+
+.geocoordinates__submit {
+    margin: 8px 16px;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #0fdb42;
+    color:#fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.geocoordinates__submit:focus {
+    outline: 1px solid #111;
+}
+
+.geocoordinates__submit:hover {
+    background-color: #0dad35;
+}
+
+.geocoordinates__submit:active {
+    background-color: #0a7926;
+    outline: 0;
+}
+
+.geocoordinates__delete {
+    margin: 8px 16px;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #db0f0f;
+    color: #fff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.geocoordinates__delete:focus {
+    outline: 1px solid #111;
+}
+
+.geocoordinates__delete:hover {
+    background-color: #ad0e0e;
+}
+
+.geocoordinates__delete:active {
+    background-color: #780a0a;
+    outline: 0;
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    padding: 0 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.widget {
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    width: 32%;
+    border: 2px solid #111;
+    border-radius: 10px;
+}
+
+.widget__map {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.widget__info {
+    display: flex;
+}
+
+.widget_left {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coordinates {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+}
+
+.invisible {
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    width: 32%;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
